@@ -1,15 +1,48 @@
-body{
-  font-family: 'Times New Roman'
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
 }
 
 body{
-    all: initial;
+  font-family: "Stack Sans Notch", sans-serif;
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: bisque;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  text-decoration: underline;
 }
 
 nav{
-
+  font-weight: 400;
+  background-color: aquamarine;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer{
-    background-color: aqua;
+  background-color: aqua;
+  clear: both;
+  margin-top: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 3%;
 }
