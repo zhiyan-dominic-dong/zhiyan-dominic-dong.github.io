@@ -1,4 +1,16 @@
-html {
-  all: unset;
-  font-family: 'Articulat CF';
+html{
+  font-family: "articulat-cf";
+}
+
+.global_nav_selection{
+  margin-left: 5%;
+  margin-right: 5%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  color: lightgray
+}
+
+.global_nav{
+  background-color: darkslategrey;
 }
