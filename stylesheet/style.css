@@ -1,13 +1,134 @@
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f8f9fa;
+.cause-regular {
+  font-family: "Cause", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.nav {
-  color: #007bff;
+.merriweather-serif {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.source-sans-3-regular {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+  font-family: "Source Sans 3", serif;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: "Cause", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Cause", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 750;
+  font-style: normal;
+}
+
+h3, h4, h5, h6 {
+  font-family: "Cause", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+header{
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+nav {
+  background-color: rgb(200, 16, 46);
+}
+
+nav ul {
+  list-style: none; /* Removes the bullet points */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/* Block/Pull Quote Start */
+div:has(> blockquote) {
+  background-color: #ededed;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: 'Merriweather';
+  float: right;
+  width: 35%;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+blockquote p::before {
+  content: "\201C";
+}
+
+blockquote p::after {
+  content: "\201D";
+}
+
+blockquote + p {
+  text-align: right;
+  
+}
+/* Block/Pull Quote End*/
+
+footer{
+  color: white;
+  background-color: rgb( 150,12,34);
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+/* Hyperlink */
+a {
   text-decoration: none;
-  padding: 10px 15px;
-  transition: background-color 0.3s ease;
+}
+
+a:link {
+  color: rgb(0,89,80);
+}
+
+a:visited{
+  color: rgb(84, 88, 90);
+}
+
+a:hover{
+  color: rgb(0,179,136);
+}
+/* End of master hyperlink */
+
+body {
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
 }

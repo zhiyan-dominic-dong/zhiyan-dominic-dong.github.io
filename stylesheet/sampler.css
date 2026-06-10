@@ -1,0 +1,136 @@
+.sampler-pagelayout{
+  display: flex;
+  margin-left: 15%;
+}
+
+aside{
+    width: 15%;
+}
+
+main{
+    width: 85%;
+}
+
+.color-swatch-primary-color,
+.color-swatch-secondary-color,
+.color-swatch-accent-color {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.color-swatch-primary-color > div,
+.color-swatch-secondary-color > div,
+.color-swatch-accent-color > div {
+    width: 220px;
+    min-height: 140px;
+    padding: 1rem;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Primary Colors */
+
+.red-primary-colors {
+    background-color: #C8102E;
+    color: white;
+}
+
+.white-primary-colors {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #ddd;
+}
+
+/* Secondary Colors */
+
+.black-secondary-colors {
+    background-color: #000000;
+    color: white;
+}
+
+.gray-secondary-colors {
+    background-color: #54585A;
+    color: white;
+}
+
+/* Accent Colors */
+
+.brick-secondary-colors {
+    background-color: #960C22;
+    color: white;
+}
+
+.Chocolate-secondary-colors {
+    background-color: #640817;
+    color: white;
+}
+
+.cream-secondary-colors {
+    background-color: #FFF9D9;
+    color: #000;
+}
+
+.lightgray-secondary-colors {
+    background-color: #888B8D;
+    color: white;
+}
+
+.gold-secondary-colors {
+    background-color: #F6BE00;
+    color: #000;
+}
+
+.mustard-secondary-colors {
+    background-color: #D89B00;
+    color: #000;
+}
+
+.ocher-secondary-colors {
+    background-color: #B97800;
+    color: white;
+}
+
+.teal-secondary-colors {
+    background-color: #00B388;
+    color: white;
+}
+
+.green-secondary-colors {
+    background-color: #00866C;
+    color: white;
+}
+
+.forest-secondary-colors {
+    background-color: #005950;
+    color: white;
+}
+
+.color-text {
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.casualexample {
+    font-family: 'cause';
+}
+
+.source3example {
+    font-family: 'source sans 3';
+}
+
+.Merriweatherexample {
+    font-family: 'Merriweather';
+}
+
+.portrait {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.toc {
+    background-color: white;
+}

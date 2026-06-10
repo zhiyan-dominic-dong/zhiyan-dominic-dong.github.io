@@ -1,0 +1,11 @@
+.global_nav_selection{
+    color: white;
+}
+
+.nav_link:link,
+.nav_link:visited {
+    color: white; /* or whatever color you want */
+    text-decoration: none;
+}
+
+
