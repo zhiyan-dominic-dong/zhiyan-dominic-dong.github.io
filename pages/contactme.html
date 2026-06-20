@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dom's Portfolio</title>
+    <title>Contact Me - Dom's Portfolio</title>
     <!-- Via CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
     <link rel="stylesheet" href="../stylesheet/style.css">
-    <link rel="stylesheet" href="../stylesheet/aboutme.css">
+    <link rel="stylesheet" href="../stylesheet/contactme.css">
 
     <!-- Google Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,8 +19,17 @@
 <body>
     <!-- Reference https://emmiwu.com/-->
     <nav class="global_nav">
+        <div class="nav_bar">
+            <a href="../index.html" class="nav_logo">
+                <img src="/assets/graphics/home_48dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg" alt="Home">
+            </a>
+            <button class="nav_toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="nav_toggle_bar"></span>
+                <span class="nav_toggle_bar"></span>
+                <span class="nav_toggle_bar"></span>
+            </button>
+        </div>
         <ul class="global_nav_selection">
-            <li><a href="../index.html" class="nav_link"><img src="../assets/graphics/home_48dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg"></a></li>
             <li><a href="../pages/project.html" class="nav_link">Projects</a></li>
             <li><a href="../pages/aboutme.html" class="nav_link">About</a></li>
             <li><a href="../pages/contactme.html" class="nav_link">Contact</a></li>
@@ -28,15 +37,65 @@
     </nav>
 
     <main>
-        <div class="about_hero_section">
-            <h1 id="about-hero-heading">Let's get in touch</h1>
-            <p id="about-hero-description">Hey there! My name is Zhiyan, or you may call me Dominic/Dom.</p>
-            <p id="about-sub-herodescription">I am a recent graduate in Digital Media at Cullen College of Engineering. With a passion for creating engaging digital experiences, building digital products that is more human-centered.</p>
+        <div class="contactme_hero">
+            <h1 class="contact-hero-heading">Let's get in touch with Zhiyan</h1>
+            <p class="contact-hero-description">I am a recent graduate in Digital Media at Cullen College of Engineering. With a passion for creating engaging digital experiences, building digital products that is more human-centered.</p>
+            
+            <div class="contact-hero-description">
+                <p>During my free time, I enjoy playing video games, listening to music, following latest technology news and chatting with my friends.</p>
+                <p>Some of my favorite video games includes:</p>
+                <ul>
+                    <li>Death Stranding</li>
+                    <li>Zenless Zone Zero</li>
+                    <li>Red Dead Redemption 2</li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact_form">
+            <div class="contactme_description">
+                <h2>Ways of Contact</h2>
+                <p>I will mainly post all my work in this portfolio site and currently I have no additional platform.</p>
+                <p>Say hello at <b><a href="mailto:zhiyan2345@gmail.com">Email</a></b> or my <b><a href="www.linkedin.com/in/zhiyandong">LinkedIn</a></b>, or simply fill out the form on the right for a quick question.</p>
+            </div>
+
+            <form action="https://formspree.io/f/xwvjzryz" method="POST">
+                <div class="header">
+                    <h1 class="contact_form">Questions?</h1>
+                    <p class="contact_description">Fill out the contact form below and I'll get back to you soon.</p>
+                </div>
+                <div class="contact_names">
+                    <label for="first_name">First Name</label>
+                    <input type="text" name="first_name" id="first_name" required>
+                    <label for="last_name">Last Name</label>
+                    <input type="text" name="last_name" id="last_name" required>
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="message">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" required></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit">Submit!</button>
+                </div>
+            </form>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2026. All rights reserved.</p>
-        <p>Last updated on <time datetime="2026-03-19">2026-03-19</time></p>
+        <div class="footer-content">
+            <p class="copyright">
+            &copy; 2026 Zhiyan Dong. All rights reserved.
+            <br>
+            Last updated on <time datetime="2026-03-19">2026-03-19</time>
+            </p>
+            <div class="footer-links">
+            <a href="mailto:zhiyan2345@gmail.com" class="footer-link">Email</a>
+            <span class="divider">•</span>
+            <a href="https://www.linkedin.com/in/zhiyandong" class="footer-link" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </div>
     </footer>
 </body>

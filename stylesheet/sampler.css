@@ -4,11 +4,26 @@
 }
 
 aside{
-    width: 15%;
+    width: 220px;
+    min-width: 220px;
+    padding-right: 3%;
+    border-right: 1px solid #ddd;
+    min-width: 200px;
+    flex-shrink: 0;
 }
 
 main{
-    width: 85%;
+    padding-left: 3%;
+    margin-right: 15%;
+
+}
+
+.left-panel {
+    position: sticky;
+    top: 20px;
+    align-self: flex-start; /* required for sticky inside flex */
+    max-height: 100vh;
+    overflow-y: auto;
 }
 
 .color-swatch-primary-color,

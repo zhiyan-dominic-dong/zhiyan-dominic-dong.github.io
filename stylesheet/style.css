@@ -21,10 +21,21 @@
   font-style: normal;
 }
 
+.nav_link:link,
+.nav_link:visited {
+    color: white; /* or whatever color you want */
+    text-decoration: none;
+}
 
 body {
   font-family: "Source Sans 3", serif;
   font-size: 18px;
+  margin: 0;
+  padding: 0;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -65,10 +76,6 @@ nav ul {
   align-items: center;
 }
 
-main{
-  margin-left: 15%;
-  margin-right: 15%;
-}
 
 /* Block/Pull Quote Start */
 div:has(> blockquote) {
@@ -97,12 +104,59 @@ blockquote + p {
 }
 /* Block/Pull Quote End*/
 
-footer{
-  color: white;
-  background-color: rgb( 150,12,34);
-  padding-left: 15%;
-  padding-right: 15%;
+/* Footer Start */
+footer {
+  background-color: #1a1a1a;
+  color: #ccc;
+  padding: 2rem 15%;
 }
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.copyright {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+.divider {
+  color: #555;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Footer end */
 
 /* Hyperlink */
 a {
@@ -122,13 +176,198 @@ a:hover{
 }
 /* End of master hyperlink */
 
-body {
-    height: 100%;
-    min-height: 100vh;
+main {
+  flex: 1;
     display: flex;
-    flex-direction: column;
+  flex-direction: column;
 }
 
-main{
-    flex: 1;
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 5%;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* softer shadow */
+    max-width: 600px; /* prevents form from stretching too wide */
+    margin: 0 auto; /* centers it */
 }
+
+.header {
+    margin-bottom: 8px;
+}
+
+h1.contact_form {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111;
+    margin: 0 0 8px 0;
+}
+
+p.contact_description {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+/* Stack label above input */
+.contact_names,
+.email,
+.message {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Side by side first/last name */
+.contact_names {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #333;
+}
+
+input,
+textarea {
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: rgb(100, 8, 23); /* highlight on focus */
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    padding: 12px;
+    background-color: rgb(100, 8, 23);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: rgb(150, 12, 34);
+}
+
+button:active {
+    background-color: rgb(246, 190, 0);
+}
+
+/* Start header */
+
+.global_nav {
+  background-color: rgb(200, 16, 46);
+  padding: 1.5rem 15%;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_logo img {
+  height: 32px;
+  display: block;
+}
+
+.global_nav_selection {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_link:link,
+.nav_link:visited {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav_link:hover {
+  color: rgb(246, 190, 0); /* gold hover, matches your accent palette */
+}
+
+/* Hamburger button — hidden on desktop */
+.nav_toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.nav_toggle_bar {
+  width: 24px;
+  height: 2px;
+  background-color: white;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Mobile breakpoint */
+@media (max-width: 700px) {
+  .global_nav {
+    padding: 0.75rem 6%;
+  }
+
+  .nav_toggle {
+    display: flex;
+  }
+
+  .global_nav_selection {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding-top: 1rem;
+    width: 100%;
+  }
+
+  .global_nav_selection.open {
+    display: flex;
+  }
+
+  /* Hamburger -> X animation when open */
+  .nav_toggle.open .nav_toggle_bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .nav_toggle.open .nav_toggle_bar:nth-child(2) {
+    opacity: 0;
+  }
+  .nav_toggle.open .nav_toggle_bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+}
+
+/* End header */

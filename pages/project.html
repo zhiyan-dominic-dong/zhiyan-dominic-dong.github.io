@@ -19,8 +19,17 @@
 <body>
     <!-- Reference https://emmiwu.com/-->
     <nav class="global_nav">
+        <div class="nav_bar">
+            <a href="../index.html" class="nav_logo">
+                <img src="/assets/graphics/home_48dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg" alt="Home">
+            </a>
+            <button class="nav_toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="nav_toggle_bar"></span>
+                <span class="nav_toggle_bar"></span>
+                <span class="nav_toggle_bar"></span>
+            </button>
+        </div>
         <ul class="global_nav_selection">
-            <li><a href="../index.html" class="nav_link"><img src="../assets/graphics/home_48dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg"></a></li>
             <li><a href="../pages/project.html" class="nav_link">Projects</a></li>
             <li><a href="../pages/aboutme.html" class="nav_link">About</a></li>
             <li><a href="../pages/contactme.html" class="nav_link">Contact</a></li>
@@ -36,7 +45,19 @@
     </main>
 
     <footer>
-        <p>&copy; 2026. All rights reserved.</p>
-        <p>Last updated on <time datetime="2026-03-19">2026-03-19</time></p>
+    <div class="footer-content">
+        <p class="copyright">
+        &copy; 2026 Zhiyan Dong. All rights reserved.
+        <br>
+        Last updated on <time datetime="2026-03-19">2026-03-19</time>
+        </p>
+        <div class="footer-links">
+        <a href="mailto:zhiyan2345@gmail.com" class="footer-link">Email</a>
+        <span class="divider">•</span>
+        <a href="https://www.linkedin.com/in/zhiyandong" class="footer-link" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+    </div>
     </footer>
+    <script src="/scripts/script.js"></script>
 </body>
+</html>

@@ -1,0 +1,35 @@
+main {
+    background-color: rgb(255, 249, 217);
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 2%;
+}
+
+.contactme_hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+.contact-hero-heading {
+    width: 100%; /* full row */
+}
+
+.contact-hero-description {
+    flex: 1; /* each p takes half */
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+.contactme_description {
+    flex: 1;
+}
+
+form {
+    flex: 1;
+}
